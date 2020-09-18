@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .float-left {
+        float: left;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .menu {
+        width: 100%;
+        /* border: 2px dotted black; */
+        border-bottom: 2px solid black;
+        background-color: rgb(226, 255, 181);
+        padding: 5px 10px;
+      }
+      .menu-item {
+        border: 2px solid red;
+        padding: 5px 20px;
+        margin: 2px 5px;
+        border-radius: 5px;
+        background-color: rgb(248, 217, 176);
+        color: green;
+      }
+      .menu-left {
+        /* border: 1px solid red; */
+      }
+      .menu-right {
+        /* border: 2px solid green; */
+      }
+      .clearfix {
+        clear: both;
+      }
+      .section-data {
+        border: 2px solid red;
+        height: 500px;
+        background-image: url("./data/img_tree.gif");
+        background-repeat: no-repeat;
+        display: none;
+      }
+      .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        box-shadow: rgb(122, 120, 120) 5px 4px 10px;
+        display: inline-block;
+        position: absolute;
+      }
+      .profile {
+        width: 500px;
+        height: 500px;
+        vertical-align: middle;
+        position: relative;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu float-left">
+      <div class="menu-left float-left">
+        <div class="menu-item float-left">Home</div>
+        <div class="menu-item float-left">About-Us</div>
+        <div class="menu-item float-left">Portfolio</div>
+        <div class="menu-item float-left">Contact-Us</div>
+        <div class="menu-item float-left">Docs</div>
+      </div>
+      <div class="menu-right float-right">
+        <div class="menu-item float-right">Logout</div>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+    <div class="profile">
+      <img src="./data/paper.gif" alt="" class="img" />
+    </div>
+    <div class="section-data">
+      <p>
+        A reassessment of procedures at various stages of the election is being
+        worked out by a team of officials in the Commission. The SVEEP
+        (systematic voter education and electoral participation) strategy is
+        being modified to ensure that ‘no voter is left behind’. The ECI
+        guidelines pertaining to electoral machinery, voters, political parties,
+        candidates and other stakeholders are also being tweaked. We will step
+        up the use of digital technologies in voter awareness, outreach and
+        training. The Commission will make greater use of digital and media
+        platforms, including bulk SMS, social media, television advertising, FM
+        and community radio, NVSP (national voter service portal) and the Voter
+        Helpline App. The Voters Guide will be updated to reflect the Covid
+        imperatives.
+      </p>
+    </div>
+  </body>
+</html>
