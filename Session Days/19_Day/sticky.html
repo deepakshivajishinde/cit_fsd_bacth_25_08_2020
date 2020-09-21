@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .common {
+        width: 100%;
+        height: 20px;
+        border: 1px solid black;
+
+        /* box-shadow: 0px 20px 5px -10px gray; */
+      }
+      .parent-1 {
+        position: relative;
+        background-color: red;
+        margin-bottom: 100px;
+      }
+      .parent-2 {
+        background-color: green;
+        height: 50px;
+        position: -webkit-sticky;
+        position: -ms-sticky;
+        position: -moz-sticky;
+        position: sticky;
+        z-index: 5;
+        top: 0px;
+      }
+      .parent-3 {
+        position: relative;
+        height: 1000px;
+        background-color: yellow;
+      }
+      ul > li {
+        display: inline-block;
+        background-color: white;
+        padding: 2px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-1 common"></div>
+    <div class="parent-2 common">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="parent-3 common">
+      All necessary preparations to conduct the Bihar elections in time are
+      underway at the Election Commission of India, state and district level.
+      The election schedule will be worked out keeping in view the logistics,
+      weather, school calendar, security and pandemic status and with all
+      related law and order authorities, health officials, national, state and
+      district-level agencies. Necessary suggestions of political parties are
+      taken into consideration. All the recognised parties have been asked to f
+      .. Read more at:
+      https://economictimes.indiatimes.com/news/politics-and-nation/bihar-election-calendar-to-be-worked-out-keeping-covid-concerns-in-mind-cec-arora/articleshow/77232076.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst
+    </div>
+  </body>
+</html>
