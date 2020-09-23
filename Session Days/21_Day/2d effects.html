@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box-outer {
+        margin: 25% auto;
+        width: 200px;
+        height: 200px;
+        border: 1px dotted black;
+        /* background-color: gainsboro; */
+        background-image: url("data/img_tree.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .box-inner {
+        width: inherit;
+        height: inherit;
+        border: 1px dotted black;
+        background-color: rgb(238, 55, 55);
+        transform: rotateZ(0deg);
+        transform-origin: left bottom;
+        border-radius: 0px;
+
+        /*transition-property: transform, background-color;
+        transition-duration: 0.5s, 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;*/
+        /* transition: transform 1s ease-in-out, background-color 2s ease-in-out; */
+        /*transition: border-radius 5s ease-in-out, width 1s 5s ease-in-out,
+          height 1s 5s ease-in-out;*/
+      }
+
+      .box-inner:hover {
+        /* transform: rotateZ(45deg);
+        transform-origin: left bottom;
+        background-color: green;*/
+        /* border-radius: 200px;
+        width: 100px;
+        height: 100px;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-outer">
+      <div class="box-inner">Hello CSS</div>
+    </div>
+  </body>
+</html>
