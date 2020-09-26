@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background-color: gray; */
+      }
+      .div-animation-1 {
+        margin-top: 20%;
+        width: 200px;
+        height: 200px;
+        animation: rotateTheBlock 1s infinite;
+      }
+
+      .div-animation-2 {
+        margin-top: 10%;
+        width: 200px;
+        height: 200px;
+        animation: moveTheBlock 1.5s 1 forwards;
+      }
+
+      @keyframes moveTheBlock {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(800px);
+        }
+        100% {
+          transform: translateX(900px);
+        }
+      }
+
+      @keyframes rotateTheBlock {
+        0% {
+          transform: rotateZ(0deg);
+        }
+
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-animation-1">
+      <img src="data/img_tree.gif" alt="" />
+    </div>
+    <div class="div-animation-2">
+      <img src="data/img_tree.gif" alt="" />
+    </div>
+  </body>
+</html>
