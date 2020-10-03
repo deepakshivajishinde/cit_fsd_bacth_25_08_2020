@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .div-1 {
+        width: 30%;
+        border: 2px solid black;
+        display: inline-block;
+      }
+      .div-2 {
+        width: 30%;
+        border: 2px solid black;
+        display: inline-block;
+      }
+
+      .div-3 {
+        width: 30%;
+        border: 2px solid black;
+        display: inline-block;
+      }
+
+      .bg-red {
+        background-color: red;
+        color: white;
+      }
+
+      .bg-green {
+        background-color: green;
+        color: white;
+      }
+
+      .bg-yellow {
+        background-color: yellow;
+      }
+
+      @media screen and (max-width: 600px) and (min-width: 500px) {
+        body {
+          background-color: pink;
+        }
+        .div-1,
+        .div-2 {
+          width: 45%;
+          display: none;
+        }
+        .div-3 {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 499px) {
+        p {
+          font-family: fontForP;
+        }
+
+        .div-1,
+        .div-2 {
+          width: 100%;
+          border: 2px dotted white;
+        }
+        .div-3 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-1 bg-red">
+      <p>
+        The election schedule will be worked out keeping in view the logistics,
+        weather, school calendar, security and pandemic status and with all
+        related law and order authorities, health officials, national, state and
+        district-level agencies. Necessary suggestions of political parties are
+        taken into consideration. All the
+      </p>
+    </div>
+    <div class="div-2 bg-green">
+      <p>
+        The election schedule will be worked out keeping in view the logistics,
+        weather, school calendar, security and pandemic status and with all
+        related law and order authorities, health officials, national, state and
+        district-level agencies. Necessary suggestions of political parties are
+        taken into consideration. All the
+      </p>
+    </div>
+    <div class="div-3 bg-yellow">
+      <p>
+        The election schedule will be worked out keeping in view the logistics,
+        weather, school calendar, security and pandemic status and with all
+        related law and order authorities, health officials, national, state and
+        district-level agencies. Necessary suggestions of political parties are
+        taken into consideration. All the
+      </p>
+    </div>
+  </body>
+</html>
