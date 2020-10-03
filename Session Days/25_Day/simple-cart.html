@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        border-radius: 0px 100px;
+        overflow: hidden;
+        background-color: lightcoral;
+      }
+      img {
+        width: 250px;
+        height: 250px;
+        margin-left: -40px;
+      }*/
+      .cart-block {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      .bg-red {
+        background-color: red;
+      }
+      .bg-blue {
+        background-color: rgb(71, 212, 255);
+      }
+
+      .child-cart-one {
+        transform: rotateY(0deg);
+      }
+      .child-cart-two {
+        position: absolute;
+        top: 0;
+        transform: rotateY(90deg);
+      }
+      .parent-cart {
+        position: relative;
+        display: inline-block;
+      }
+
+      .parent-cart {
+        overflow: hidden;
+      }
+      .parent-cart:hover .child-cart-one {
+        animation: rotateCart 0.5s ease-in-out forwards;
+      }
+      .parent-cart:hover .child-cart-two {
+        animation: rotateCart 0.5s 0.4s ease-in-out forwards reverse;
+      }
+      @keyframes rotateCart {
+        0% {
+          transform: rotateY(0deg);
+        }
+
+        100% {
+          transform: rotateY(90deg);
+        }
+      }
+
+      p {
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<div>
+      <img src="data/img_tree.gif" alt="" />
+    </div>
+    <div>
+      <img src="data/img_tree.gif" alt="" />
+    </div>
+    <div>
+      <img src="data/img_tree.gif" alt="" />
+    </div>
+  -->
+    <div class="parent-cart">
+      <div class="child-cart-one cart-block bg-red">
+        <p>Slide-1</p>
+      </div>
+      <div class="child-cart-two cart-block bg-blue">
+        <img src="data/img_tree.gif" alt="" />
+      </div>
+    </div>
+    <div class="parent-cart">
+      <div class="child-cart-one cart-block bg-red">
+        <p>Slide-1</p>
+      </div>
+      <div class="child-cart-two cart-block bg-blue">
+        <img src="data/img_tree.gif" alt="" />
+      </div>
+    </div>
+    <div class="parent-cart">
+      <div class="child-cart-one cart-block bg-red">
+        <p>Slide-1</p>
+      </div>
+      <div class="child-cart-two cart-block bg-blue">
+        <img src="data/img_tree.gif" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
