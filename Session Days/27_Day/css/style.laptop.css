@@ -1,0 +1,11 @@
+body {
+  background-color: pink;
+}
+.div-1,
+.div-2 {
+  width: 45%;
+  display: none;
+}
+.div-3 {
+  display: none;
+}
