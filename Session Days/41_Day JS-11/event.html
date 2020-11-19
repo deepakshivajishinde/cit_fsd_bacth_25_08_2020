@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="ptag"></p>
+    <input type="text" name="" id="userName" value="" onkeyup="keyUp(this)" />
+    <button onclick="message(this,UserName)">CLICK ME</button>
+    <script>
+      /*click*/
+      var userName = document.getElementById("userName");
+      var name = "Prashant";
+
+      function message(_this, userName) {
+        console.log(userName);
+        userName.value = name;
+      }
+
+      /*key*/
+      function keyUp(_this) {
+        console.log(_this.value);
+        var ptag = document.getElementById("ptag");
+        ptag.innerText = _this.value;
+      }
+    </script>
+  </body>
+</html>

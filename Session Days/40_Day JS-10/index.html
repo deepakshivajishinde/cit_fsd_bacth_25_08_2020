@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="ptag"></p>
+    <!--<p>HELLO CSS</p>
+    <p>HELLO JSS</p> -->
+    <input type="text" name="" id="userName" value="" onkeyup="keyUp(this)" />
+    <button onclick="message()">CLICK ME</button>
+    <script>
+      /* DOCUMENT*/
+      // /*var pTag = document.getElementsByTagName("p")[0].innerHTML;
+      // var pTag1 = document.getElementById("ptag").innerHTML;
+      // console.log(pTag);
+      // console.log(pTag1);*/
+
+      /*click*/
+      var userName = document.getElementById("userName");
+      var name = "Prashant";
+      function message() {
+        userName.value = name;
+        console.log(userName.value);
+        console.log(userName.getAttribute("value"));
+      }
+
+      /*key*/
+      function keyUp(_this) {
+        var ptag = document.getElementById("ptag");
+        ptag.innerText = _this.value;
+      }
+    </script>
+  </body>
+</html>

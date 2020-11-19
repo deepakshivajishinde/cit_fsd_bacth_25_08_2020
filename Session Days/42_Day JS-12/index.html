@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      table td,
+      th {
+        border: 1px solid;
+      }
+      .btn-danger {
+        color: wheat;
+        background-color: red;
+        font-weight: bold;
+        outline: 0px;
+        border: 0px;
+        cursor: pointer;
+      }
+      .btn-danger:active {
+        background-color: rgb(245, 167, 167);
+        color: rgb(143, 143, 143);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="userText"></p>
+    <input type="text" id="userInput" />
+    <button class="btn" id="saveStudentInfo">CLICK</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Student Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script>
+      var userInput = document.getElementById("userInput");
+      var userText = document.getElementById("userText");
+      var tbody = document.getElementById("tbody");
+
+      tbody.innerHTML = `<tr>
+                            <td colspan="3">No Student List</td>
+                        </tr>`;
+
+      var studentNameList = [];
+      userInput.addEventListener("keyup", function () {
+        var _this = this;
+        userText.innerHTML = _this.value;
+      });
+
+      userInput.addEventListener("focus", function () {
+        var _this = this;
+        _this.placeholder = "Enter User Name";
+      });
+
+      /* userInput.addEventListener("blur", function () {
+        var _this = this;
+        var isEmpty = _this.value == "" ? false : true;
+        if (isEmpty == false) {
+          alert("User Name Must NOt Be Empty");
+        }
+      });*/
+
+      var btn = document.getElementById("saveStudentInfo");
+      btn.addEventListener("click", function () {
+        var studentName = userInput.value;
+        studentNameList.push(studentName);
+        userInput.value = "";
+        printList(studentNameList);
+      });
+
+      function printList(studentNameList) {
+        var _tr = "";
+        /*var len = studentNameList.length;
+        for (var i = 0; i < len; i++) {
+          _tr += `<tr> 
+                    <td>${i + 1}</td>
+                    <td>${studentNameList[i]}</td>
+                  </tr>`;
+        }*/
+        studentNameList.forEach(function (arrayValue, arrayIndex) {
+          _tr += `<tr> 
+                    <td>${arrayIndex + 1}</td>
+                    <td>${arrayValue}</td>
+                    <td><button class="btn-danger" onclick="deleteUser(this,)">Delete</button></td>
+                  </tr>`;
+        });
+        tbody.innerHTML = _tr;
+      }
+      function deleteUser(_this, index) {
+        //.slpice
+      }
+    </script>
+  </body>
+</html>

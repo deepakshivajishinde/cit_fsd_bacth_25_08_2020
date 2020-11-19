@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div > p {
+        background-color: yellow;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Hello</p>
+    </div>
+    <script></script>
+    <script>
+      var student_list = [];
+      var student = ["Deepak Shinde", 8430101013, [1, "SEMS, Kopargoan"]];
+      student_list.push(student);
+      var student_school = student_list[0][2][1];
+      console.log(student_school);
+    </script>
+  </body>
+</html>

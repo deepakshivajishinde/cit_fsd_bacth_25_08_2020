@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var var1 = "gaurav";
+      var var2 = "suraj";
+
+      /*console.log(var2);
+      console.log(var1);
+      for (var i = 0; i < 10000; i++) {
+        console.log(1);
+      }*/
+      /*function printUser(userName, callback) {
+        callback(userName);
+        console.log(userName);
+      }*/
+      /*printUser(var1, function (return_data) {
+        console.log(return_data + " " + var2);
+      });*/
+      console.log(var1);
+      setTimeout(function () {
+        console.log("this was callback");
+      }, 2000); //1s == 1000ms
+      console.log(var2);
+    </script>
+  </body>
+</html>

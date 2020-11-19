@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      /* tr:nth-child(even) {
+        background-color: chocolate;
+        color: white;
+      } */
+      td,
+      th {
+        border: 1px solid black;
+        padding: 5px 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="inputFilter" placeholder="Type BGroup" />
+    <table>
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Student Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>B-Group</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

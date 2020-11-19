@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="userText"></p>
+    <input type="text" id="userInput" />
+
+    <button class="btn" id="saveStudentInfo">CLICK</button>
+
+    <script>
+      var userInput = document.getElementById("userInput");
+      var userText = document.getElementById("userText");
+      var studentNameList = [];
+      userInput.addEventListener("keyup", function () {
+        var _this = this;
+        userText.innerHTML = _this.value;
+      });
+
+      userInput.addEventListener("focus", function () {
+        var _this = this;
+        _this.placeholder = "Enter User Name";
+      });
+
+      userInput.addEventListener("blur", function () {
+        var _this = this;
+        var isEmpty = _this.value == "" ? false : true;
+        if (isEmpty == false) {
+          alert("User Name Must NOt Be Empty");
+        }
+      });
+      // var btn = document.getElementsByTagName("button")[0];
+      // var btn = document.getElementsByClassName("btn")[1];
+      var btn = document.getElementById("saveStudentInfo");
+      btn.addEventListener("click", function () {
+        var studentName = userInput.value;
+        studentNameList.push(studentName);
+        userInput.value = "";
+        console.log(studentNameList);
+      });
+    </script>
+  </body>
+</html>

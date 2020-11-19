@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numberVar = "2";
+      var converted = parseInt(numberVar);
+      // console.log(converted);
+      var var1 = 1;
+      var var2 = 2;
+
+      function add(var_1, var_2) {
+        return var1 + var2;
+      }
+
+      // var addCalc = add(var1, var2);
+      var addCalc = function (var_1, var_2) {
+        return var1 + var2;
+      };
+      console.log(addCalc(1, 2));
+    </script>
+  </body>
+</html>

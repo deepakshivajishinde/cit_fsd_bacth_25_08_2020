@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>HELLO HTML</p>
+    <!-- <p>HELLO CSS</p>
+    <p>HELLO JSS</p> -->
+    <script>
+      var pTag = document.getElementsByTagName("p");
+      var pLength = pTag.length;
+
+      /*for (var i = 0; i < pLength; i++) {
+        var pText = pTag[i].innerHTML;
+        console.log(pText);
+      }*/
+      //console.log(pTag);
+
+      setTimeout(function () {
+        pTag[0].innerHTML = "Suraj";
+      }, 2000);
+    </script>
+  </body>
+</html>

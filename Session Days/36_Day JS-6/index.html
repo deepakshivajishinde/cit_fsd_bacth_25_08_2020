@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  var studentName = "Suraj";
+      var studentRollNumber = 21;
+      function printStudentDetails(name, rollNumber) {
+        console.log(typeof name);
+        console.log(name + ":" + rollNumber);
+      }
+      //printStudentDetails(studentRollNumber, studentName);
+      var printStudentData = function (name, rollNumber) {
+        console.log(typeof name);
+        console.log(name + ":" + rollNumber);
+      };*/
+
+      // printStudentData(studentName, studentRollNumber);
+      var var1 = 3;
+      var var2 = 4;
+      function addNumbers(numberOne, numberTwo, calcPie) {
+        numberTwo = numberOne + numberTwo;
+        calcPie(numberTwo);
+      }
+      addNumbers(var1, var2, function (numberOne) {
+        numberOne = numberOne * 3.14;
+        console.log(numberOne);
+      });
+    </script>
+  </body>
+</html>
