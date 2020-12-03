@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //var array = [1, 2, "a", 2, "b", 7.8];
+      var array = [
+        {
+          id: 1,
+          name: "Akash",
+        },
+        {
+          id: 2,
+          name: "Nikhil",
+        },
+      ];
+      //var array = new Array();
+
+      //array.push(2.5, 4, 87, 99);
+      //array.unshift(2.5, 4, 87, 99);
+      //array.splice(2, 0, "JS", 45, "p", 7.88);
+
+      //var index = array.indexOf("b");
+      //var index = array.lastIndexOf(2);
+
+      var value = array.includes({
+        id: 1,
+        name: "Akash",
+      });
+      var s_id = 3;
+      var value = array.find(function (element) {
+        return element.id == s_id;
+      });
+
+      var value = array.find((element) => element.id == s_id);
+
+      console.log(value);
+    </script>
+  </body>
+</html>

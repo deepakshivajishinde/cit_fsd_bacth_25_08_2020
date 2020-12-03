@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var months = [
+        "Jan",
+        "Feb",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      var myDate = "20-12-2020";
+      myDate = myDate.split("-");
+      console.log(myDate);
+      var date = new Date();
+
+      console.log(Date.now());
+      console.log(date.getDate());
+      console.log(date.getDay());
+      console.log(months[date.getMonth()]);
+      console.log(date.getFullYear());
+      console.log(date.getSeconds());
+    </script>
+  </body>
+</html>
